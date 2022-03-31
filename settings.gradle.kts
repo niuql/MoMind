@@ -11,9 +11,8 @@ pluginManagement {
 rootProject.name = "MobMind"
 
 
-include(":androidApp")
-include(":desktopApp")
-include(":common")
-include(":browserApp")
-include(":nodejsApp")
+include(":apps:androidApp")
+include(":apps:desktopApp")
+include(":apps:browserApp")
+include(":compose-ui")
 
