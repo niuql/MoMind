@@ -1,6 +1,6 @@
-package com.itmob.androidApp
+package com.itmob.mind
 
-import com.itmob.common.App
+import com.itmob.mind.ui.App
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity

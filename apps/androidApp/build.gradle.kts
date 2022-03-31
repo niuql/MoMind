@@ -21,7 +21,7 @@ dependencies {
 android {
     compileSdkVersion(31)
     defaultConfig {
-        applicationId = "com.itmob.androidApp"
+        applicationId = "com.itmob.mind"
         minSdkVersion(24)
         targetSdkVersion(31)
         versionCode = 1

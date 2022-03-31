@@ -1,4 +1,4 @@
-package com.itmob.common
+package com.itmob.mind.ui
 
 import androidx.compose.material.Text
 import androidx.compose.material.Button

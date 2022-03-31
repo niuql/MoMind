@@ -1,4 +1,4 @@
-import com.itmob.common.App
+import com.itmob.mind.ui.App
 import androidx.compose.material.MaterialTheme
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
