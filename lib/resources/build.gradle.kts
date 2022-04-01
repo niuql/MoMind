@@ -7,12 +7,7 @@ plugins {
 }
 
 group = "com.itmob"
-version = "0.0.1"
-
-repositories {
-    google()
-    maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
-}
+version = "1.0.0"
 
 kotlin {
     android()
@@ -28,38 +23,30 @@ kotlin {
                 api(compose.runtime)
                 api(compose.foundation)
                 api(compose.material)
-                api(compose.material3)
-                implementation(project(":lib:resources"))
+                api(compose.materialIconsExtended)
+                implementation("androidx.compose.ui:ui:1.2.0-alpha03")
+                implementation("androidx.compose.ui:ui-graphics:1.1.0")
             }
         }
-        val commonTest by getting {
-            dependencies {
-                implementation(kotlin("test"))
-            }
-        }
+
         val androidMain by getting {
             dependencies {
-                api("androidx.appcompat:appcompat:1.4.1")
-                api("androidx.core:core-ktx:1.7.0")
             }
         }
-        val androidTest by getting {
-            dependencies {
-                implementation("junit:junit:4.13.2")
-            }
-        }
+
         val desktopMain by getting {
             dependencies {
-                api(compose.preview)
             }
         }
-        val desktopTest by getting
     }
 }
 
 android {
     compileSdk = 31
-    sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
+    sourceSets.named("main") {
+        manifest.srcFile("src/androidMain/AndroidManifest.xml")
+        res.srcDirs("src/commonMain/resources")
+    }
     defaultConfig {
         minSdk = 21
         targetSdk =31

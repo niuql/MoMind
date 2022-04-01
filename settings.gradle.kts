@@ -15,4 +15,5 @@ include(":apps:androidApp")
 include(":apps:desktopApp")
 include(":apps:browserApp")
 include(":compose-ui")
+include(":lib:resources")
 
