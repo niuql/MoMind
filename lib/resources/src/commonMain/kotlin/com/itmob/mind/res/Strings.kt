@@ -2,6 +2,7 @@ package com.itmob.mind.res
 
 interface Strings {
     val app_name: String
+        get() = "MobMind"
 
     val menu_home: String
     val menu_file: String
@@ -25,7 +26,19 @@ interface Strings {
 
     // Edit menu
 
+
+    // Insert menu
+    val note: String
+    val label: String
+    val link: String
+    val image: String
+    val mark: String
+    val attachment: String
+    val video: String
+    val audio: String
+
     val settings: String
+    val supportLanguages: Array<String>
     val about: String
     val check_update: String
     val terms_of_service: String
@@ -41,15 +54,9 @@ interface Strings {
         get() = settings
     val desc_logo_icon: String
         get() = app_name
-
-    // Sample data
-    val randomImgUrl: String
-        get() = "https://source.unsplash.com/random/400x400"
 }
 
 object StringsEn : Strings {
-    override val app_name = "MobMind"
-
     override val menu_home = "Home"
     override val menu_file = "File"
     override val menu_edit = "Edit"
@@ -68,8 +75,18 @@ object StringsEn : Strings {
     override val close_other = "Close Other Maps"
     override val print = "Print"
     override val exit = "Exit"
+    
+    override val note = "note"
+    override val label = "label"
+    override val link = "link"
+    override val image = "image"
+    override val mark = "mark"
+    override val attachment = "file"
+    override val video = "video"
+    override val audio = "audio"
 
     override val settings = "Settings"
+    override val supportLanguages = arrayOf("English", "简体中文", "繁體中文")
     override val about = "About"
     override val check_update = "Check for Update"
     override val terms_of_service = "Terms of service"
@@ -80,8 +97,6 @@ object StringsEn : Strings {
 }
 
 object StringsZh : Strings {
-    override val app_name = StringsEn.app_name
-
     override val menu_home = "首页"
     override val menu_file = "文件"
     override val menu_edit = "编辑"
@@ -100,8 +115,18 @@ object StringsZh : Strings {
     override val close_other = "关闭其它导图"
     override val print = "打印"
     override val exit = "退出"
+    
+    override val note = "笔记"
+    override val label = "标签"
+    override val link = "链接"
+    override val image = "图片"
+    override val mark = "标记"
+    override val attachment = "附件"
+    override val video = "视频"
+    override val audio = "语音"
 
     override val settings = "设置"
+    override val supportLanguages = arrayOf("简体中文", "繁體中文", "English")
     override val about = "关于"
     override val check_update = "检查更新"
     override val terms_of_service = StringsEn.terms_of_service
@@ -112,8 +137,6 @@ object StringsZh : Strings {
 }
 
 object StringsZhHk : Strings {
-    override val app_name = StringsEn.app_name
-
     override val menu_home = "首页"
     override val menu_file = "文件"
     override val menu_edit = "編輯"
@@ -132,8 +155,18 @@ object StringsZhHk : Strings {
     override val close_other = "關閉其它導圖"
     override val print = "打印"
     override val exit = "退出"
+    
+    override val note = ""
+    override val label = ""
+    override val link = ""
+    override val image = ""
+    override val mark = ""
+    override val attachment = ""
+    override val video = ""
+    override val audio = ""
 
     override val settings = "設置"
+    override val supportLanguages = arrayOf("繁體中文", "简体中文", "English")
     override val about = "關於"
     override val check_update = "檢查更新"
     override val terms_of_service = StringsEn.terms_of_service

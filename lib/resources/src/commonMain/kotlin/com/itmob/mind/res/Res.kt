@@ -1,6 +1,6 @@
 package com.itmob.mind.res
 
-import java.util.*
+import java.util.Locale
 
 object Res {
     val string = when (Locale.getDefault().language) {
